@@ -12,6 +12,7 @@ class AbstractArduino
 {
 
     protected $connection = null;
+    protected $ip = null;
     protected $properties = array();
     private $inited = false;
 
@@ -36,6 +37,10 @@ class AbstractArduino
 
     public function send($property, $value)
     {
+        if (apc_exists('device' . $this->ip)) {
+            apc_delete('device' . $this->ip);
+        }
+
         $url = $this->connection . '?type=' . $property . '&value=' . $value;
 
         $state = json_decode(file_get_contents($url), true);
@@ -45,12 +50,18 @@ class AbstractArduino
     public function set($property, $value)
     {
         $this->properties[$property] = $value;
+        \Bh\ShBackend\Logger\LoggerMysql::getInstance()->log($this->ip, $property, $value);
         return $this;
     }
 
     public function get($property)
     {
         return $this->properties[$property];
+    }
+    
+    public function getAsJson()
+    {
+        return json_encode($this->properties);
     }
 
 }

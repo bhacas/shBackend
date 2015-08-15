@@ -7,9 +7,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
-    "require-dev": {
-        "phpunit/phpunit": "4.7.*"
+    "require": {
+        "swiftmailer/swiftmailer": "@stable",
+        "almasaeed2010/adminlte": "dev-master"
     },
     "autoload": {
         "psr-0": {
