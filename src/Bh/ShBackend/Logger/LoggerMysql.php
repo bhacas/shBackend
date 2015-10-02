@@ -39,5 +39,11 @@ class LoggerMysql implements LoggerInterface
             $this->db->query($query);
         }
     }
+    
+    public function getLogs($device, $event = null, $limit = 10)
+    {
+        $selectQuery = 'SELECT * FROM history WHERE ip = "' . $device. '"' . ($event ? ' AND event = "' . $event . '"' : '') .' ORDER BY date DESC LIMIT ' . $limit;
+        return $this->db->query($selectQuery)->fetchAll(\PDO::FETCH_ASSOC);
+    }
 
 }

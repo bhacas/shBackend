@@ -1,4 +1,14 @@
+.info-box span.lg {
+    font-size: 24px;
+} 
+
 .small-box.disabled {
     opacity: 0.65;
     filter: alpha(opacity=65);
+}
+
+.btn-app:not(.value1) {
+    color: #666 !important;
+    border: 1px solid #ddd !important;
+    background-color: #f4f4f4 !important;
 }
