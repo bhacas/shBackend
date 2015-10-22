@@ -31,148 +31,86 @@ $title = 'Sypialnia 1';
                     <!-- Main content -->
                     <section class="content">
 
-                        <!-- Small boxes (Stat box) -->
                         <div class="row">
-                            <div class="col-lg-4 col-xs-6">
-                                <!-- small box -->
-                                <a id="light1" class="small-box bg-red-active disabled ajaxButton" href="#">
-                                    <div class="inner">
-                                        <h3>Światło 1</h3>
-                                        <p>Wyłączone</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-lightbulb-o"></i>
-                                    </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="info-box">
+                                    <span class="info-box-icon bg-yellow"><i>ºC</i></span>
+                                    <div id="t1" class="info-box-content">
+                                        <span class="info-box-text">Temperatura</span>
+                                        <span class="sh-c info-box-number lg">90</span>
+                                    </div><!-- /.info-box-content -->
+                                </div><!-- /.info-box -->
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="info-box">
+                                    <span class="info-box-icon bg-red"><i>%</i></span>
+                                    <div id="h1" class="info-box-content">
+                                        <span class="info-box-text">Wilgotność powietrza</span>
+                                        <span class="sh-c info-box-number lg">90</span>
+                                    </div><!-- /.info-box-content -->
+                                </div><!-- /.info-box -->
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="info-box">
+                                    <span class="info-box-icon bg-green-active"><i class="fa fa-male"></i></span>
+                                    <div id="m1" class="info-box-content">
+                                        <span class="info-box-text">Detekcja ruchu</span>
+                                        <span class="sh-c info-box-text lg">Brak ruchu</span>
+                                    </div><!-- /.info-box-content -->
+                                </div><!-- /.info-box -->
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="info-box">
+                                    <span class="info-box-icon bg-blue-active"><i class="fa fa-windows"></i></span>
+                                    <div id="b1" class="info-box-content">
+                                        <span class="info-box-text">Roleta</span>
+                                        <span class="sh-c info-box-text lg">Zamknięta</span>
+                                    </div><!-- /.info-box-content -->
+                                </div><!-- /.info-box -->
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="box-header">
+                                <h3 class="box-title">Sterowanie</h3>
+                            </div>
+                            <div class="box-body">
+                                <a class="btn btn-app bg-red ajaxButton" id="l1">
+                                    <i class="fa fa-lightbulb-o"></i> Światło 1
                                 </a>
-                            </div><!-- ./col -->
-                            <div class="col-lg-4 col-xs-6">
-                                <!-- small box -->
-                                <a id="light2" class="small-box bg-red-active disabled ajaxButton" href="#">
-                                    <div class="inner">
-                                        <h3>Światło 2</h3>
-                                        <p>Wyłączone</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-lightbulb-o"></i>
-                                    </div>
+                                <a class="btn btn-app bg-red ajaxButton" id="l2">
+                                    <i class="fa fa-lightbulb-o"></i> Światło 2
                                 </a>
-                            </div><!-- ./col -->
-                            <div class="col-lg-4 col-xs-6">
-                                <!-- small box -->
-                                <a id="light2" class="small-box bg-red-active disabled ajaxButton" href="#">
-                                    <div class="inner">
-                                        <h3>Kinkiet</h3>
-                                        <p>Wyłączone</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-lightbulb-o"></i>
-                                    </div>
+                                <a class="btn btn-app bg-yellow ajaxButton" id="s1">
+                                    <i class="fa fa-plug"></i> Kontakt 1
                                 </a>
-                            </div><!-- ./col -->
-                        </div><!-- /.row -->
-                        
-                        <div class="row">
-                            <div class="col-lg-2 col-xs-6">
-                                <!-- small box -->
-                                <a id="outlet1" class="small-box bg-aqua-active disabled ajaxButton" href="#">
-                                    <div class="inner">
-                                        <h3>K1 (góra)</h3>
-                                        <p>Wyłączony</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-plug"></i>
-                                    </div>
+                                <a class="btn btn-app">
+                                    <i class="fa fa-plug"></i> Kontakt 2
                                 </a>
-                            </div><!-- ./col -->
-                            <div class="col-lg-2 col-xs-6">
-                                <!-- small box -->
-                                <a id="outlet1" class="small-box bg-aqua-active disabled ajaxButton" href="#">
-                                    <div class="inner">
-                                        <h3>K1 (dół)</h3>
-                                        <p>Wyłączony</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-plug"></i>
-                                    </div>
+                                <a class="btn btn-app">
+                                    <i class="fa fa-plug"></i> Kontakt 3
                                 </a>
-                            </div><!-- ./col -->
-                            <div class="col-lg-2 col-xs-6">
-                                <!-- small box -->
-                                <a id="outlet2" class="small-box bg-aqua-active disabled ajaxButton" href="#">
-                                    <div class="inner">
-                                        <h3>K2 (góra)</h3>
-                                        <p>Wyłączony</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-plug"></i>
-                                    </div>
+                                <a class="btn btn-app">
+                                    <i class="fa fa-plug"></i> Kontakt 4
                                 </a>
-                            </div><!-- ./col -->
-                            <div class="col-lg-2 col-xs-6">
-                                <!-- small box -->
-                                <a id="outlet2" class="small-box bg-aqua-active disabled ajaxButton" href="#">
-                                    <div class="inner">
-                                        <h3>K2 (dół)</h3>
-                                        <p>Wyłączony</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-plug"></i>
-                                    </div>
+                                <a class="btn btn-app">
+                                    <i class="fa fa-windows"></i> Roleta
                                 </a>
-                            </div><!-- ./col -->
-                            <div class="col-lg-2 col-xs-6">
-                                <!-- small box -->
-                                <a id="outlet2" class="small-box bg-aqua-active disabled ajaxButton" href="#">
-                                    <div class="inner">
-                                        <h3>K3 (góra)</h3>
-                                        <p>Wyłączony</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-plug"></i>
-                                    </div>
-                                </a>
-                            </div><!-- ./col -->
-                            <div class="col-lg-2 col-xs-6">
-                                <!-- small box -->
-                                <a id="outlet2" class="small-box bg-aqua-active disabled ajaxButton" href="#">
-                                    <div class="inner">
-                                        <h3>K3 (dół)</h3>
-                                        <p>Wyłączony</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-plug"></i>
-                                    </div>
-                                </a>
-                            </div><!-- ./col -->
-                        </div><!-- /.row -->
-                        
-                        <div class="row">
-                            <div class="col-lg-2 col-xs-6">
-                                <!-- small box -->
-                                <div id="window" class="small-box bg-green-active disabled">
-                                    <div class="inner">
-                                        <h3>Okno</h3>
-                                        <p>Zamknięte</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-windows"></i>
-                                    </div>
-                                </div>
-                            </div><!-- ./col -->
-                        </div><!-- /.row -->
+                            </div><!-- /.box-body -->
+                        </div>
 
                         <div class="row">
                             <section class="col-lg-7">
                                 <div class="nav-tabs-custom">
                                     <ul class="nav nav-tabs pull-right ui-sortable-handle">
-                                        <li class="active"><a href="#temp-daily-chart" data-toggle="tab" aria-expanded="true">Temperatura dzienny</a></li>
-                                        <li class=""><a href="#temp-weekly-chart" data-toggle="tab" aria-expanded="false">Temperatura tygodniowy</a></li>
+                                        <li class="active"><a href="#temp-chart" data-toggle="tab" aria-expanded="true">Temperatura</a></li>
+                                        <li class=""><a href="#humanity-chart" data-toggle="tab" aria-expanded="false">Wilgotność powietrza</a></li>
                                         <li class="pull-left header"><i class="fa fa-line-chart"></i> Wykresy</li>
                                     </ul>
                                     <div class="tab-content no-padding">
                                         <!-- Morris charts -->
-                                        <div class="chart tab-pane active" id="temp-daily-chart" style="position: relative; height: 300px;"></div>
-                                        <div class="chart tab-pane" id="temp-weekly-chart" style="position: relative; height: 300px;"></div>
+                                        <div class="chart tab-pane active" id="temp-chart" style="position: relative; height: 300px;"></div>
+                                        <div class="chart tab-pane" id="humanity-chart" style="position: relative; height: 300px;"></div>
                                     </div>
                                 </div>
                             </section>
@@ -197,14 +135,14 @@ $title = 'Sypialnia 1';
         <?php include_once 'inc/javascripts.php' ?>
         <script type="text/javascript">
 
-            var tempDailyChart = new Morris.Line({
+            var tempChart = new Morris.Line({
                 // ID of the element in which to draw the chart.
-                element: 'temp-daily-chart',
+                element: 'temp-chart',
                 // Chart data records -- each entry in this array corresponds to a point on
                 // the chart.
                 data: [],
                 // The name of the data record attribute that contains x-values.
-                xkey: 'time',
+                xkey: 'date',
                 // A list of names of data record attributes that contain y-values.
                 ykeys: ['value'],
                 ymin: 'auto 10',
@@ -213,42 +151,70 @@ $title = 'Sypialnia 1';
                 // chart.
                 labels: ['Temperatura']
             });
-            var tempWeeklyChart = new Morris.Line({
+            var humanityChart = new Morris.Line({
                 // ID of the element in which to draw the chart.
-                element: 'temp-weekly-chart',
+                element: 'humanity-chart',
                 // Chart data records -- each entry in this array corresponds to a point on
                 // the chart.
                 data: [],
                 // The name of the data record attribute that contains x-values.
-                xkey: 'time',
+                xkey: 'date',
                 // A list of names of data record attributes that contain y-values.
                 ykeys: ['value'],
                 ymin: 'auto 10',
                 ymax: 'auto 30',
                 // Labels for the ykeys -- will be displayed when you hover over the
                 // chart.
-                labels: ['Temperatura']
+                labels: ['Wilgotność powietrza']
             });
 
             function getStatus() {
-                $.ajax({url: "/admin/getStatus.php?ip=<?php echo $ip ?>", success: function(result) {
-                        $.each(result.outputs, function(type, value) {
+                $.ajax({url: "/gateway/get.php?ip=<?php echo $ip ?>", success: function(result) {
+                        $.each(result, function(type, value) {
+
+                            //if (type == 'l1' || type == 'l2') {
                             if (value == 0) {
-                                $('#' + type).addClass('disabled');
-                            } else {
-                                $('#' + type).removeClass('disabled');
+                                $('#' + type).removeClass('value1');
+                            } else if (value == 1) {
+                                $('#' + type).addClass('value1');
+                            }
+                            //}
+
+                            if (type === 't1' || type === 'h1' || type === 'm1') {
+                                if (type === 't1' || type === 'h1') {
+                                    $('#' + type + ' span.sh-c').text(value / 10);
+                                } else if (type === 'm1' && value == 1) {
+                                    $('#' + type + ' span.sh-c').text('Wykryto ruch');
+                                } else if (type === 'm1' && value == 0) {
+                                    $('#' + type + ' span.sh-c').text('Brak ruchu');
+                                }
                             }
                         });
+                    }
+                });
+            }
+            ;
 
+            function getEvents() {
+                $.ajax({url: "/gateway/events.php?ip=<?php echo $ip ?>", success: function(result) {
                         var htmlTable = '<tr><th style="width: 10px">#</th><th>Data</th><th>Zdarzenie</th></tr>';
                         var i = 0;
-                        $.each(result.notifies, function(res, obj) {
-                            htmlTable += '<tr><td>' + (++i) + '</td><td>' + obj.time + '</td><td>' + obj.notify + '</td></tr>';
+                        $.each(result, function(res, obj) {
+                            htmlTable += '<tr><td>' + (++i) + '</td><td>' + obj.date + '</td><td>' + obj.text + '</td></tr>';
                         });
                         $('#notifies table').html(htmlTable);
+                    }
+                });
+            }
+            ;
 
-                        tempDailyChart.setData(result.temp.daily);
-                        tempWeeklyChart.setData(result.temp.weekly);
+            function getChartData(res) {
+                $.ajax({url: "/gateway/chartData.php?ip=<?php echo $ip ?>&event=" + res, success: function(result) {
+                        if (res == 't1') {
+                            tempChart.setData(result);
+                        } else if (res == 'h1') {
+                            humanityChart.setData(result);
+                        }
                     }
                 });
             }
@@ -257,21 +223,37 @@ $title = 'Sypialnia 1';
             $(document).ready(function() {
 
                 getStatus();
+                getEvents();
+                getChartData('t1');
+                getChartData('h1');
 
                 setInterval(function() {
                     getStatus();
                 }, 2500);
 
+                setInterval(function() {
+                    getEvents();
+                    getChartData('t1');
+                    getChartData('h1');
+                }, 10000);
+
                 $(".ajaxButton").click(function(e) {
                     e.preventDefault();
                     console.log($(this).attr('id'));
-                    var value = $(this).hasClass('disabled') ? 1 : 0;
+                    var value = $(this).hasClass('value1') ? 0 : 1;
                     var _this = $(this);
-                    $.ajax({url: "http://<?php echo $ip ?>/?type=" + $(this).attr('id') + "&value=" + value, success: function(result) {
-                            _this.toggleClass('disabled');
+                    $.ajax({url: "/gateway/set.php?ip=<?php echo $ip ?>&t=" + $(this).attr('id') + "&v=" + value, success: function(result) {
+                            _this.toggleClass('value1');
                         }
                     });
                 });
+
+                $('a[data-toggle="tab"]').on('click', function(e) {
+                    console.log(e);
+                    getChartData('t1');
+                    getChartData('h1');
+                })
+
             });
         </script>
     </body>

@@ -230,7 +230,7 @@ $title = 'Adruino Mock';
                 setInterval(function() {
                     getStatus();
                 }, 2500);
-                
+
                 setInterval(function() {
                     getEvents();
                     getChartData('t1');
@@ -247,6 +247,13 @@ $title = 'Adruino Mock';
                         }
                     });
                 });
+
+                $('a[data-toggle="tab"]').on('click', function(e) {
+                    console.log(e);
+                    getChartData('t1');
+                    getChartData('h1');
+                })
+
             });
         </script>
     </body>
