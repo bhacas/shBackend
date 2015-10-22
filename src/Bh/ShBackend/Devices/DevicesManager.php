@@ -13,7 +13,8 @@ class DevicesManager
 
     private static $oInstance = false;
     public $devicesIds = array(
-        '127.0.0.1'
+        '127.0.0.1',
+        '192.168.1.112'
     );
 
     public static function getInstance()
@@ -52,7 +53,7 @@ class DevicesManager
             case '127.0.0.1':
                 $arduino = new ArduinoMock();
                 break;
-            case 'sss':
+            case '192.168.1.112':
                 $arduino = new ArduinoMock();
                 break;
             default:
